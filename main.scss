@@ -1,0 +1,188 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{ 
+    background-image: url(https://u.profitroom.pl/2017.edenspa.pl/thumb/1600x900/uploads/bg/tlogradient_eden_bialeodgory.png); 
+}
+
+.header{
+    display: flex;
+    flex-basis: 100%;
+    background-color: white;
+    &__navigation{
+        display: flex;
+        flex-basis: 80%;
+        justify-content: flex-end;
+        padding-top: 1.6em;
+    }
+    &__logo{
+        margin-left: 6em;
+    }
+    &__social{
+        padding-top: 0.6em;
+    }
+}
+
+.menu{
+    flex-direction: row;
+    display: flex;
+    flex-basis: 90%;
+    justify-content: flex-end;
+    &__item{
+        margin: 1em;
+        margin-right: 8em;
+        list-style: none;
+    }
+    &__link{
+        text-decoration: none;
+        color: black;
+        font-size: 2em;
+    }
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-basis: 100%;
+    &__title{
+        flex-basis: 100%;
+        padding-bottom: 2em;
+        padding-top: 2em;
+        font-size: 4em;
+    }
+    &__text{
+        flex-basis: 70%;
+        font-size: 1.5em;
+    }
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    &__title{
+        padding-top: 4em;
+        padding-bottom: 2em;
+        grid-area: 1/1/2/-1;
+        text-align: center;
+        font-size: 4em;
+    }
+    &__img1{
+        display: flex;
+        width: 80%;
+        grid-area: 3/1/4/2;
+        padding-top: 8em;
+        justify-self: center;
+    }
+
+    &__text1{
+        padding-top: 5em;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    &__link1{
+        text-decoration: none;
+        color: black;
+    }
+
+    &__img2{
+        display: flex;
+        width: 80%;
+        grid-area: 2/2/3/-1;
+        padding-top: 2em;
+        justify-self: center;
+    }
+
+    &__text2{
+        padding-top: 10em;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    &__link2{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.kontakt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-top: 4em;
+    text-align: center;
+    &__title{
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    &__dane{
+        font-size: 2em;
+        margin: 0.6em;
+    }
+}
+
+.road{
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    padding-top: 4em;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+    &__map{
+        padding: 2em;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.cena{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    margin-left: 18em;
+    margin-right: 18em;
+    &__tekst{
+        padding-right: 4em;
+        padding-top: 2em;
+        padding-bottom: 12.3em;
+        text-align: center;
+    }
+    &__tekst2{
+        font-size: 0.5em;
+    }
+    &__form{
+        text-align: center;
+    }
+    &__button{
+
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.footer{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 2em;
+    margin-top: 8em;
+}
